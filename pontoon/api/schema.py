@@ -1,15 +1,19 @@
 import graphene
 from graphene_django import DjangoObjectType
 from graphene_django.debug import DjangoDebug
+# Graphene: 파이썬에서 GraphQL API를 쉽게 구축하기 위해 사용하는 라이브러리
 
+# pontoon/api 폴더 내 util.py의 get_fields(info) 모듈 사용 
 from pontoon.api.util import get_fields
 
+# pontoon/base 폴더 내 models.py 에서 Locale, Project, ProjectLocale 모듈 사용 - pontoon사이트의 locale,Project,projectLocale 데이터 구조 정의된 파일
 from pontoon.base.models import (
     Locale as LocaleModel,
     Project as ProjectModel,
     ProjectLocale as ProjectLocaleModel,
 )
 
+# pontoon/tags 폴더 내 models.py 에서 Tag 사용 - pontoon사이트의 tag정보 데이터 구조 정의된 파일
 from pontoon.tags.models import Tag as TagModel
 
 
