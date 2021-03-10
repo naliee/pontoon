@@ -1,4 +1,5 @@
 from graphql.language.ast import FragmentSpread
+# graphql.language: Graphql언어로 구문 분석, 작동 담당
 
 
 def get_fields(info):
